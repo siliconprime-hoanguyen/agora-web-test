@@ -156,13 +156,6 @@
                 $(".content").hide();
                 members == 1? timedCount(): null;
                 var $container = viewSwitch? $(".left ul"):$(".right ul");
-                if(!videoChecked){
-                    $(".screen").removeClass("wait").addClass("audio");
-                    $container.append('<li class="remoteAudio"><div id="agora_remote' + stream.getId() + '"></div><p>'+ stream.getId() + '</p></li>')
-                    stream.play('agora_remote'+stream.getId());
-                    $("#agora_remote" + stream.getId() + " div").hide();
-                    return;
-                }
                 if(members == 1){
                     $(".screen").removeClass("wait").addClass("video single");
                 }
